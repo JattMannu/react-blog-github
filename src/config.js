@@ -11,7 +11,7 @@ export const config = {
 
   // Set it to true if you have a Github app to add to this project
   // and fill the client ID & secret
-  enableOAuth: true,
+  enableOAuth: false,
   OAuthClientID: "Iv1.e72fcc50a4dc6434",
   OAuthSecret: "775e74d7046d3bfe441703596fc34f40280e5c08",
 
