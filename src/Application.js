@@ -28,6 +28,7 @@ const Application = () => {
           <meta charSet="utf-8" />
           <meta name="description" content={config.subtitle} />
           <meta name="theme-color" content={config.header.backgroundColor} />
+          <script data-ad-client="ca-pub-4452707738360728" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       </Helmet>
       <ApolloProvider client={client}>
         <ThemeProvider theme={themeMode} toggleTheme={themeToggler}>
