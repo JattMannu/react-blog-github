@@ -16,10 +16,10 @@ export const config = {
   OAuthSecret: "775e74d7046d3bfe441703596fc34f40280e5c08",
 
   // Your Personal Blog Title
-  title: "The Coding Dream",
+  title: "de Bugger",
 
   // Your Personal Blog Subtitle
-  subtitle: "Software Developer",
+  subtitle: "The debug engineer",
 
   // Header customization
   header: {

@@ -7,6 +7,7 @@ import { Header } from "../Components/Header";
 import { Loader } from '../Components/Common'
 import { BlogContainer } from '../Components/Blog'
 import { Card } from '../Components/Blog/Card'
+import AdSense from 'react-adsense';
 
 const GET_POSTS = gql`
 {
@@ -57,15 +58,26 @@ const Blog = () => {
   return (
     <>
       <Header />
+      <AdSense.Google
+        client='ca-pub-4452707738360728'
+        slot='6888853460'
+      />
       <BlogContainer>
         {
           loading
-          ? <Loader />
-          : posts.map((v, i) => {
+            ? <Loader />
+            : posts.map((v, i) => {
               return <Card blog={v} key={i} />;
             })
         }
       </BlogContainer>
+      <AdSense.Google
+        client='ca-pub-4452707738360728'
+        slot='8748730041'
+      >
+        <div>test</div>
+      
+      </AdSense.Google> 
     </>
   );
 }
