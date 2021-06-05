@@ -9,6 +9,7 @@ import {
   CardReadingTime,
   CardTitle,
   CardDescription,
+  CardCategoryHeader,
 } from './'
 
 export const Card = ({ blog }) => {
@@ -30,13 +31,15 @@ export const Card = ({ blog }) => {
   return (
     <CardContainer>
       <CardHeader>
-        <>
-        {labels.map((value, i) => {
-          return (
-            <CardCategory value={value} key={i} />
-          );
-        })}
-        </>
+        <CardCategoryHeader>
+          <>
+          {labels.map((value, i) => {
+            return (
+              <CardCategory value={value} key={i} />
+            );
+          })}
+          </>
+        </CardCategoryHeader>
         <CardReadingTime time={readingTime(blog.body).minutes} />
       </CardHeader>
       <div onClick={() => openBlog(blog.title, blog.number)}>
