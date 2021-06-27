@@ -58,10 +58,6 @@ const Blog = () => {
   return (
     <>
       <Header />
-      <AdSense.Google
-        client='ca-pub-4452707738360728'
-        slot='6888853460'
-      />
       <BlogContainer>
         {
           loading
@@ -71,13 +67,6 @@ const Blog = () => {
             })
         }
       </BlogContainer>
-      <AdSense.Google
-        client='ca-pub-4452707738360728'
-        slot='8748730041'
-      >
-        <div>test</div>
-      
-      </AdSense.Google> 
     </>
   );
 }
